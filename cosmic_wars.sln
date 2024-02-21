@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmicWars.Lib", "CosmicWars.Lib\CosmicWars.Lib.csproj", "{DD330D14-B2C1-4072-B281-494D8F2D9880}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CosmicWars.Lib.Tests", "CosmicWars.Lib.Tests\CosmicWars.Lib.Tests.csproj", "{B494CC58-6C40-4BE3-BD01-C863A533213F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD330D14-B2C1-4072-B281-494D8F2D9880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD330D14-B2C1-4072-B281-494D8F2D9880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD330D14-B2C1-4072-B281-494D8F2D9880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD330D14-B2C1-4072-B281-494D8F2D9880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B494CC58-6C40-4BE3-BD01-C863A533213F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B494CC58-6C40-4BE3-BD01-C863A533213F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B494CC58-6C40-4BE3-BD01-C863A533213F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B494CC58-6C40-4BE3-BD01-C863A533213F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
