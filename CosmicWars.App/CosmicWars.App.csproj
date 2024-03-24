@@ -8,8 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.CommandLine" Version="2.0.0-beta4.22272.1" />
-    <PackageReference Include="System.Threading" Version="4.3.0" />
+    <PackageReference Include="Hwdtech.Core" Version="1.0.0" />
+    <PackageReference Include="Hwdtech.IoC" Version="1.0.0" />
+    <PackageReference Include="Hwdtech.Ioc.ScopeBasedIoCImplementation" Version="1.0.0" />
+
+    <ProjectReference Include="..\CosmicWars.Lib\CosmicWars.Lib.csproj" />
   </ItemGroup>
 
 </Project>
