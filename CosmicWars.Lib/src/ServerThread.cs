@@ -20,7 +20,15 @@ namespace CosmicWars.Lib
             _thread.Start();
         }
 
-        private void ThreadHandle() {
+        public void Stop()
+        {
+            _thread.Join();
+        }
+
+        private void ThreadHandle()
+        {
+            // Simulation thread work
+            // There should be command execution here
             Console.WriteLine("[+] Thread is running!");
         }
     }

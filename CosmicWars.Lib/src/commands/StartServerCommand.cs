@@ -35,7 +35,7 @@ namespace CosmicWars.Lib
                 if (input.Key == ConsoleKey.Q)
                 {
                     _running = false;
-                    Console.WriteLine("[+] Server is stopped!");
+                    IoC.Resolve<ICommand>("CosmicWars.App.Stop", _serverThreads).Execute();
                 }
             }
         }
