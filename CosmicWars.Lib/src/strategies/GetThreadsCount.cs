@@ -4,11 +4,11 @@ namespace CosmicWars.Lib
     {
         public object Execute(params object[] args)
         {
-            var _args = (string[])args;
+            var shellArgs = (string[])args;
 
-            if ((_args.Length == 2) && ((_args[0] == "-t") || (_args[0] == "--threads-count")))
+            if ((shellArgs.Length == 2) && ((shellArgs[0] == "-t") || (shellArgs[0] == "--threads-count")))
             {
-                if (int.TryParse(_args[1], out int threadsCount))
+                if (int.TryParse(shellArgs[1], out int threadsCount))
                 {
                     return threadsCount;
                 }

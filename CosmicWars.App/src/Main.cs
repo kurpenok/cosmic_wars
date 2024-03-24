@@ -18,7 +18,12 @@ namespace CosmicWars.App
             var getThreadsCountStrategy = new GetThreadsCountStrategy();
             IoC.Resolve<ICommand>("IoC.Register", "CosmicWars.App.GetThreadsCount", (object[] args) => (getThreadsCountStrategy.Execute(args))).Execute();
 
-            IoC.Resolve<ICommand>("CosmicWars.App.Start", IoC.Resolve<int>("CosmicWars.App.GetThreadsCount", args)).Execute();
+            var createServerThreadsStrategy = new CreateServerThreadsStrategy();
+            IoC.Resolve<ICommand>("IoC.Register", "CosmicWars.App.CreateServerThreads", (object[] args) => (createServerThreadsStrategy.Execute(args))).Execute();
+
+            var threadsCount = IoC.Resolve<int>("CosmicWars.App.GetThreadsCount", args);
+            var serverThreads = IoC.Resolve<List<ServerThread>>("CosmicWars.App.CreateServerThreads", threadsCount);
+            IoC.Resolve<ICommand>("CosmicWars.App.Start", threadsCount, serverThreads).Execute();
         }
     }
 }

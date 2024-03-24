@@ -4,9 +4,10 @@ namespace CosmicWars.Lib
     {
         public object Execute(params object[] args)
         {
-            var _threadsCount = (int)args[0];
+            var threadsCount = (int)args[0];
+            var serverThreads = (List<ServerThread>)args[1];
 
-            return new StartServerCommand(_threadsCount);
+            return new StartServerCommand(threadsCount, serverThreads);
         }
     }
 }
